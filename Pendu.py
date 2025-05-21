@@ -119,9 +119,9 @@ if __name__ == "__main__":
     choix = 1                   #le lancement du jeu dépend du choix du joueur qui au début est 1 pour rentrer dans la boucle
     while choix == 1:           #Tant que le choix est 1, le jeu se lance
         fichier = int(input("\nAvez-vous votre propre fichier de mot? Oui = 1, Non = 0 : "))
-        jouer_au_pendu(fichier)        #Fonction qui lance le jeu du pendu
+        jouer_au_pendu(fichier)        #Fonction qui lance le jeu du pendu, prend en paramètre si le joueur a un fichier ou non
         choix = int(input("\nVouler vous rejouer? Si Oui tapez 1 sinon tapez 0: "))   #Le joueur peut décider de rejouer ou non
         if choix == 0:          #Si le choix est 0, le jeu est terminé on sort de la boucle
-            print("Merci d'avoir joué, à la revoyure.")
+            print("\nMerci d'avoir joué, au revoir!")
 
     print("\n----Fermeture du jeu----\n")
