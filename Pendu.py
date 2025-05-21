@@ -102,7 +102,7 @@ def donne_une_chance(nb_chances, mot_aleatoire, liste_lettre, indice_donne):    
         liste_lettres_restantes = ""                    #On créé une liste vide qui prendra les lettres non trouvées restantes
         for lettre_non_trouve in mot_aleatoire:         #On parcourt les lettre du mot à trouver
             if lettre_non_trouve not in liste_lettre:   #Si la lettre du mot ne fait pas partie de celle déjà trouvée
-                liste_lettres_restantes += lettre_non_trouve    #On l'ajoute au la liste de lettres restantes à trouver
+                liste_lettres_restantes += lettre_non_trouve    #On l'ajoute à la liste de lettres restantes à trouver
         indice = random.choice(liste_lettres_restantes)         #On choisi au hasard une lettre parmi celles restantes
         print("\nVoici un INDICE:", indice)                        #On affiche la lettre en indice
         indice_donne = True         #On change la valeur de l'indice donnée pour True pour ne plus rentrer dans la boucle
@@ -110,7 +110,7 @@ def donne_une_chance(nb_chances, mot_aleatoire, liste_lettre, indice_donne):    
 
 """------------Fin des Fonctions------------"""
 
-#-----------  BOUCLE PRINCIPALE  ----------------'''
+#-----------  BOUCLE PRINCIPALE  ----------------
 
 if __name__ == "__main__":
 
